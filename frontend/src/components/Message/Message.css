@@ -1,0 +1,34 @@
+.Message {
+    overflow-wrap: break-word;
+    background: rgba(255, 255, 255, .20);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, .8);
+    padding: 10px 25px;
+    max-width: 80%;
+    width: fit-content;
+  }
+  
+  .Message.self {
+    margin-left: auto;
+    background: rgba(255, 255, 255, .06);
+    --dir: 1 !important;
+  }
+  
+  .animate {
+    --dir: -1;
+    animation: Message 100ms;
+    z-index: 1;
+  }
+  
+  @keyframes Message {
+    from {
+      transform: translate(calc(var(--dir) * 200%), 300px) scale(0);
+    }
+    to {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  

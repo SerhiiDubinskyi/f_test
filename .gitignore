@@ -1,5 +1,14 @@
+# Python
 venv/
 __pycache__/
+
+# JS
+node_modules/
+build/
+dist/
+package-lock.json
+
+# Editors
 .idea/
 .vscode/
 
