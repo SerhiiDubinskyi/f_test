@@ -1,4 +1,4 @@
-import React, { ReactComponentElement } from 'react';
+import React from 'react';
 import './Wrapper.css';
 
 export const Wrapper = ({children, ...rest}: React.HTMLAttributes<HTMLDivElement>) => {
