@@ -13,7 +13,7 @@ with open('FAQ.jsonl', 'a') as outfile:
         for question in questions:
             json_string = json.dumps({'messages':
                 [
-                    {'role': 'system', 'content': 'You are bot that helps brokers make proper decisions.'},
+                    {'role': 'system', 'content': 'You are a bot that helps brokers.'},
                     {'role': 'user', 'content': question},
                     {'role': 'assistant', 'content': answer}
                 ]
